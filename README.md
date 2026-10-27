@@ -9,9 +9,7 @@ A React Native 0.88 app (New Architecture) where JavaScript calls one TurboModul
 
 Both end up in the same unchanged legacy C++ code.
 
-| Android (16 KB page emulator) | iOS |
-| --- | --- |
-| <img src="docs/android.png" width="260" alt="Android: JS to C++ TurboModule to legacy C++"> | <img src="docs/ios.png" width="260" alt="iOS: JS to Obj-C++ native module to Swift to legacy C++"> |
+<img src="docs/ios.png" width="260" alt="iOS: JS to Obj-C++ native module to Swift to legacy C++">
 
 ```text
                  JavaScript
