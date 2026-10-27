@@ -2,9 +2,9 @@
 
 Example code for the article [How a Creative Solution Kept Our Legacy C++ Image Processing Alive](https://turjoysaha.com/writing/how-a-creative-solution-kept-legacy-cpp-image-processing-alive).
 
-A React Native 0.87 app (New Architecture) where JavaScript calls one TurboModule, `NativeImageProcessor`, and each platform backs it differently:
+A React Native 0.88 app (New Architecture) where JavaScript calls one TurboModule, `NativeImageProcessor`, and each platform backs it differently:
 
-- **Android**: a pure C++ TurboModule. JavaScript calls straight into C++ over JSI, with no Java in between. The C++ is built 16 KB-aligned.
+- **Android**: a pure C++ TurboModule. JavaScript calls straight into C++ over JSI, with no Java in between. Built with NDK r30, so it's 16 KB-aligned out of the box.
 - **iOS**: an Objective-C++ native module that forwards to an existing Swift class, which calls the same C++.
 
 Both end up in the same unchanged legacy C++ code.
@@ -38,7 +38,7 @@ Both end up in the same unchanged legacy C++ code.
 | Existing Swift → C++ | [`ios/LegacyCppTurboModule/ImageProcessor.swift`](ios/LegacyCppTurboModule/ImageProcessor.swift) via the C shim [`LegacyImageProcessorC.h`](shared/legacy/LegacyImageProcessorC.h) |
 | Using it | [`App.tsx`](App.tsx) |
 
-One template change unrelated to the module: iOS 27 requires the UIScene lifecycle, so [`AppDelegate.swift`](ios/LegacyCppTurboModule/AppDelegate.swift) creates React Native's window in a `SceneDelegate`.
+iOS uses the UIScene lifecycle, which iOS 27 requires. React Native 0.88's template already starts React Native from [`SceneDelegate.swift`](ios/LegacyCppTurboModule/SceneDelegate.swift), so nothing extra was needed.
 
 The legacy code here is a small stand-in that returns a string. In a real app it's the image processing you don't want to rewrite. The point is the wiring around it.
 
@@ -58,13 +58,13 @@ The screen shows which route the call took on that platform and the string the l
 
 ## 16 KB page sizes
 
-Google Play requires apps targeting Android 15+ to support [16 KB memory pages](https://developer.android.com/guide/practices/page-sizes). This project uses NDK r27, which doesn't align for 16 KB by default, so [`CMakeLists.txt`](android/app/src/main/jni/CMakeLists.txt) passes the linker flags explicitly. (NDK r28+ does it by default.)
+Google Play requires apps targeting Android 15+ to support [16 KB memory pages](https://developer.android.com/guide/practices/page-sizes). Native libraries need 16 KB-aligned ELF segments, which NDK r28 and later produce by default. This project sets `ndkVersion = "30.0.16248370"` in [`android/build.gradle`](android/build.gradle) (React Native 0.88's template still pins r27), so the legacy C++ in [`CMakeLists.txt`](android/app/src/main/jni/CMakeLists.txt) needs no extra flags.
 
 To check the built library:
 
 ```bash
 unzip -o android/app/build/outputs/apk/debug/app-debug.apk 'lib/arm64-v8a/libappmodules.so' -d /tmp/apk
-$ANDROID_HOME/ndk/27.1.12297006/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-objdump -p /tmp/apk/lib/arm64-v8a/libappmodules.so | grep LOAD
+$ANDROID_HOME/ndk/30.0.16248370/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-objdump -p /tmp/apk/lib/arm64-v8a/libappmodules.so | grep LOAD
 ```
 
 Every `LOAD` segment should show `align 2**14`.

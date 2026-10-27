@@ -7,35 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0565B366D09AFDCC1AB167AF /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A985323711348175901E76 /* ImageProcessor.swift */; };
 		0C80B921A6F3F58F76C31292 /* libPods-LegacyCppTurboModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LegacyCppTurboModule.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		5BD2F3821F29B235F13C7B32 /* LegacyImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64CDEBAE0FA7A7EF2F75EA74 /* LegacyImageProcessor.cpp */; };
+		2A46BE7D26AA3EA5A01966B1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		5EF6A47B1D850B696177B136 /* NativeImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 636BBB6B23E05923E4726ED5 /* NativeImageProcessor.mm */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		761780EF2CA45674006654EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EE2CA45674006654EF /* SceneDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		926425DE2BBFA0B2309CC43E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		96DBE58373A5667C0BB6CF2B /* NativeImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1607B79CC02D17AA3251A72A /* NativeImageProcessor.mm */; };
-		D737D78675CD7D3E25511254 /* LegacyImageProcessorC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B375C1DB693B6F0DB8A4BC32 /* LegacyImageProcessorC.cpp */; };
+		D1E2A72E649B911A7D82E602 /* LegacyImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A25B3923EAA344E1511027F /* LegacyImageProcessor.cpp */; };
+		E4D8F08AB5C0D0548EFDB119 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891794BA65A872D132CEF7B /* ImageProcessor.swift */; };
+		EAB9AD3D49EAA3D0D94E9BA8 /* LegacyImageProcessorC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D50700FC2A68609A4272D41 /* LegacyImageProcessorC.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FECC18E32B090BC985973FF /* LegacyCppTurboModule-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LegacyCppTurboModule/LegacyCppTurboModule-Bridging-Header.h"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LegacyCppTurboModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegacyCppTurboModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LegacyCppTurboModule/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LegacyCppTurboModule/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = LegacyCppTurboModule/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		1607B79CC02D17AA3251A72A /* NativeImageProcessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = LegacyCppTurboModule/NativeImageProcessor.mm; sourceTree = "<group>"; };
-		26A985323711348175901E76 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyCppTurboModule/ImageProcessor.swift; sourceTree = "<group>"; };
-		388566B7449F37402768C010 /* LegacyImageProcessorC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LegacyImageProcessorC.h; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-LegacyCppTurboModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyCppTurboModule.debug.xcconfig"; path = "Target Support Files/Pods-LegacyCppTurboModule/Pods-LegacyCppTurboModule.debug.xcconfig"; sourceTree = "<group>"; };
+		4A25B3923EAA344E1511027F /* LegacyImageProcessor.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = LegacyImageProcessor.cpp; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-LegacyCppTurboModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyCppTurboModule.release.xcconfig"; path = "Target Support Files/Pods-LegacyCppTurboModule/Pods-LegacyCppTurboModule.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-LegacyCppTurboModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LegacyCppTurboModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64CDEBAE0FA7A7EF2F75EA74 /* LegacyImageProcessor.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = LegacyImageProcessor.cpp; sourceTree = "<group>"; };
+		636BBB6B23E05923E4726ED5 /* NativeImageProcessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = NativeImageProcessor.mm; path = LegacyCppTurboModule/NativeImageProcessor.mm; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = LegacyCppTurboModule/AppDelegate.swift; sourceTree = "<group>"; };
-		78096F75BF4F6598D8435A65 /* LegacyImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LegacyImageProcessor.h; sourceTree = "<group>"; };
+		761780EE2CA45674006654EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = LegacyCppTurboModule/SceneDelegate.swift; sourceTree = "<group>"; };
+		7B4C9361E46280D598C5A39B /* LegacyImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LegacyImageProcessor.h; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LegacyCppTurboModule/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A5748DD03BB83679ADBAAB4B /* NativeImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LegacyCppTurboModule/NativeImageProcessor.h; sourceTree = "<group>"; };
-		B375C1DB693B6F0DB8A4BC32 /* LegacyImageProcessorC.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = LegacyImageProcessorC.cpp; sourceTree = "<group>"; };
+		8552CB3437AAD7B1C24FBC8D /* NativeImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NativeImageProcessor.h; path = LegacyCppTurboModule/NativeImageProcessor.h; sourceTree = "<group>"; };
+		9D50700FC2A68609A4272D41 /* LegacyImageProcessorC.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = LegacyImageProcessorC.cpp; sourceTree = "<group>"; };
+		D891794BA65A872D132CEF7B /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = LegacyCppTurboModule/ImageProcessor.swift; sourceTree = "<group>"; };
+		E03A5DF125D75D437E9AE409 /* LegacyImageProcessorC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LegacyImageProcessorC.h; sourceTree = "<group>"; };
+		E8196FD0A3527C696FAF563F /* LegacyCppTurboModule-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LegacyCppTurboModule-Bridging-Header.h"; path = "LegacyCppTurboModule/LegacyCppTurboModule-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -56,13 +58,14 @@
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				761780EE2CA45674006654EF /* SceneDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
-				26A985323711348175901E76 /* ImageProcessor.swift */,
-				A5748DD03BB83679ADBAAB4B /* NativeImageProcessor.h */,
-				1607B79CC02D17AA3251A72A /* NativeImageProcessor.mm */,
-				0FECC18E32B090BC985973FF /* LegacyCppTurboModule-Bridging-Header.h */,
+				D891794BA65A872D132CEF7B /* ImageProcessor.swift */,
+				8552CB3437AAD7B1C24FBC8D /* NativeImageProcessor.h */,
+				636BBB6B23E05923E4726ED5 /* NativeImageProcessor.mm */,
+				E8196FD0A3527C696FAF563F /* LegacyCppTurboModule-Bridging-Header.h */,
 			);
 			name = LegacyCppTurboModule;
 			sourceTree = "<group>";
@@ -76,13 +79,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		628F6E9F09A7E641719E272B /* legacy */ = {
+		4C91DAD70532620370D5C117 /* legacy */ = {
 			isa = PBXGroup;
 			children = (
-				78096F75BF4F6598D8435A65 /* LegacyImageProcessor.h */,
-				64CDEBAE0FA7A7EF2F75EA74 /* LegacyImageProcessor.cpp */,
-				388566B7449F37402768C010 /* LegacyImageProcessorC.h */,
-				B375C1DB693B6F0DB8A4BC32 /* LegacyImageProcessorC.cpp */,
+				7B4C9361E46280D598C5A39B /* LegacyImageProcessor.h */,
+				4A25B3923EAA344E1511027F /* LegacyImageProcessor.cpp */,
+				E03A5DF125D75D437E9AE409 /* LegacyImageProcessorC.h */,
+				9D50700FC2A68609A4272D41 /* LegacyImageProcessorC.cpp */,
 			);
 			name = legacy;
 			path = ../shared/legacy;
@@ -103,7 +106,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				628F6E9F09A7E641719E272B /* legacy */,
+				4C91DAD70532620370D5C117 /* legacy */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -189,7 +192,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				926425DE2BBFA0B2309CC43E /* PrivacyInfo.xcprivacy in Resources */,
+				2A46BE7D26AA3EA5A01966B1 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
-				0565B366D09AFDCC1AB167AF /* ImageProcessor.swift in Sources */,
-				96DBE58373A5667C0BB6CF2B /* NativeImageProcessor.mm in Sources */,
-				5BD2F3821F29B235F13C7B32 /* LegacyImageProcessor.cpp in Sources */,
-				D737D78675CD7D3E25511254 /* LegacyImageProcessorC.cpp in Sources */,
+				761780EF2CA45674006654EF /* SceneDelegate.swift in Sources */,
+				E4D8F08AB5C0D0548EFDB119 /* ImageProcessor.swift in Sources */,
+				5EF6A47B1D850B696177B136 /* NativeImageProcessor.mm in Sources */,
+				D1E2A72E649B911A7D82E602 /* LegacyImageProcessor.cpp in Sources */,
+				EAB9AD3D49EAA3D0D94E9BA8 /* LegacyImageProcessorC.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
